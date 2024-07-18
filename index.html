@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ti One Store</title>
+    <link rel="shortcut icon" href="./assets/img/T1.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
 </head>
@@ -12,12 +13,18 @@
         <div class="headerTop">
             <div>Hello, world!</div>
             <div class="headerTop__setup">
-                <button class="headerTop__setup--option">
+                <button class="headerTop__setup-lang">
                     <i class="fa-solid fa-globe"></i>
                     Ngôn ngữ
                     <i class="fa-solid fa-angle-down"></i>
+                    <div class="headerTop__LangActive">
+                        <a href="?lang=ja" class="headerTop__langItems">日本語</a>
+                        <a href="?lang=en" class="headerTop__langItems">English</a>
+                        <a href="?lang=vi" class="headerTop__langItems">Tiếng Việt</a>
+                    </div>
                 </button>
-                <button class="headerTop__setup--option">
+                
+                <button class="headerTop__setup-option">
                     <i class="fa-regular fa-circle-question"></i>
                     Hỗ trợ
                 </button>
@@ -52,7 +59,7 @@
                 </li>
                 <li class="headerNavbar__list--elements">
                     <i class="fa-solid fa-cart-shopping" style="margin-bottom: 5px;"></i>
-                    Rỏ hàng
+                    Giỏ hàng
                 </li>
                 <li class="headerNavbar__list--elements">
                     <i class="fa-solid fa-question" style="margin-bottom: 5px;"></i>

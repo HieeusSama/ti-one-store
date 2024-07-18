@@ -13,13 +13,66 @@
     display: flex;
 }
 
-.headerTop__setup--option
+.headerTop__setup-option
 {
     margin-left: 10px;
     cursor: pointer;
     background-color: white;
     border: none;
 }
+.headerTop__setup-lang
+{
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.headerTop__setup-lang:focus .headerTop__LangActive
+{
+    display: block;
+}
+
+.headerTop__LangActive
+{
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 32px;
+    right: 80px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform-origin: 50% top;
+    animation: langActiveAnimation ease-in 0.1s;
+}
+
+@keyframes langActiveAnimation
+{
+    from
+    {
+        transform: scale(0);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}
+
+.headerTop__langItems
+{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.headerTop__langItems:hover
+{
+    background-color: #e8e8e8;
+}
+
 
 .headerNavbar
 {
