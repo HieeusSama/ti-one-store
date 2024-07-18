@@ -40,7 +40,7 @@
 {
     margin-left: 40px;
     height: 37px;
-    width: 900px;
+    width: 880px;
     border: 1px solid #a4a4a4;
     border-radius: 5px;
     display: flex;
@@ -81,7 +81,7 @@
     margin-left: 50px;
     height: 36px;
     width: 44px;
-    background-color: #e2012d;
+    background-color: var(--main-color);
     border: none;
     border-left: 1px solid #ccc;
     cursor: pointer;
@@ -134,3 +134,109 @@
     font-size: 15px;
     cursor: pointer;
 }
+
+.headerMenu
+{
+    margin-top: 10px;
+    width: 100vw;
+    height: 36px;
+    background-color: #f5f7fa;
+    color: #333;
+    padding-left: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.headerMenu__element
+{
+    display: grid;
+    width: 106px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #536280;
+    cursor: pointer;
+}
+
+.headerMenu__element:hover
+{
+    color: var(--main-color);
+}
+
+.headerMenu .headerMenu__wall
+{
+    height: 20px;
+    width: 1px;
+    background-color: #b8c3d9;
+    list-style: none;
+}
+
+.headerMenu__element--isActive
+{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    top: -4px;
+    margin-bottom: -4px;
+    width: 106px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+}
+
+.headerFloor
+{
+    width: 100vw;
+    height: 4px;
+    background-color: var(--main-color);
+}
+
+.headerMenu2
+{
+    width: 100vw;
+    height: 38px;
+    background-color: #f5f7fa;
+    color: #333;
+    padding-left: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-right: 500px;
+}
+
+.headerMenu2__element
+{
+    flex: 1px;
+    color: #333;
+    font-size: 12px;
+    list-style: none;
+}
+
+.headerMenu2__element:hover
+{
+    color: var(--main-color);
+}
+
+.headerMenu2__element--isActive
+{
+    flex: 1px;
+    color: var(--main-color);
+    font-size: 12px;
+    list-style: none;
+}
+
+.headerMenu2__element--isActive .headerMenu2__element--wall
+{
+    position: relative;
+    top: 13px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+
