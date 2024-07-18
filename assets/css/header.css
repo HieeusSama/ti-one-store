@@ -9,13 +9,12 @@
 
 .headerTop__text
 {
-    margin-top: px;
-    color: --text-color;
+    color: var(--text-color1);
 }
 
 .headerTop__setup
 {
-    color: --text-color;
+    color: var(--text-color1);
     display: flex;
     list-style: none;
 }
@@ -23,6 +22,7 @@
 .headerTop__setup--option
 {
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .headerNavbar
@@ -37,29 +37,30 @@
 
 .headerNavbar__logo
 {
-    height: 35px;
-    
+    height: 41px;
 }
 
 .headerNavbar__search
 {
-    margin-left: 50px;
+    margin-left: 40px;
     height: 37px;
-    width: 950px;
+    width: 900px;
     border: 1px solid #a4a4a4;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
-.headerNavbar__search--btnOption
+.headerNavbar__search--btnSelect
 {
     height: 36px;
     width: 130px;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #a4a4a4;
+    border: none;
+    border-right: 1px solid #ccc;
     outline: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .headerNavbar__search--input
@@ -78,8 +79,46 @@
     margin-left: 50px;
     height: 36px;
     width: 44px;
-    background-color: #d356a3;
-    border-radius: 0 5px 5px 0;
-    border: 1px solid #a4a4a4;
+    background-color: #e2012d;
+    border: none;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+}
+
+.headerNavbar__advancedSearch
+{
+    margin-left: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    width: 94px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #f6f6f6;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.headerNavbar__list
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    
+}
+
+.headerNavbar__list--elements
+{
+    color: var(--text-color2);
+    flex: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
     cursor: pointer;
 }

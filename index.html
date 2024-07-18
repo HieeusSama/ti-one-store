@@ -25,12 +25,39 @@
         <div class="headerNavbar">
             <img src="./assets/img/logo.png" alt="" class="headerNavbar__logo">
             <div class="headerNavbar__search">
-                <button class="headerNavbar__search--btnOption">ALL</button>
+                <select class="headerNavbar__search--btnSelect">
+                    <option value="all">ALL</option>
+                    <option value="figure">Figure</option>
+                    <option value="gundam">Gundam</option>
+                    <option value="game">Game</option>
+                </select>
                 <input type="text" class="headerNavbar__search--input" placeholder="Search by keywords">
                 <button class="headerNavbar__search--btnSearch">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
+            <button class="headerNavbar__advancedSearch">
+                Tìm kiếm<br>
+                Nâng cao
+            </button>
+            <ol class="headerNavbar__list">
+                <li class="headerNavbar__list--elements">
+                    <i class="fa-solid fa-user-plus" style="margin-bottom: 5px;"></i>
+                    Đăng ký
+                </li>
+                <li class="headerNavbar__list--elements">
+                    <i class="fa-solid fa-right-to-bracket" style="margin-bottom: 5px;"></i>
+                    Đăng nhập
+                </li>
+                <li class="headerNavbar__list--elements">
+                    <i class="fa-solid fa-cart-shopping" style="margin-bottom: 5px;"></i>
+                    Rỏ hàng
+                </li>
+                <li class="headerNavbar__list--elements">
+                    <i class="fa-solid fa-question" style="margin-bottom: 5px;"></i>
+                    Hỗ trợ
+                </li>
+            </ol>
         </div>
     </div>
     <div id="main">
