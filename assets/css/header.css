@@ -268,6 +268,7 @@
     color: #333;
     font-size: 12px;
     list-style: none;
+    cursor: pointer;
 }
 
 .headerMenu2__element:hover
@@ -281,6 +282,7 @@
     color: var(--main-color);
     font-size: 12px;
     list-style: none;
+    cursor: pointer;
 }
 
 .headerMenu2__element--isActive .headerMenu2__element--wall
